@@ -13,25 +13,27 @@
     <meta name="robots" content="index, follow">
     <meta name="googlebot" content="index, follow">
     <meta name="bingbot" content="index, follow">
-    
+
     <meta property="og:type" content="website">
-<meta property="og:title" content="PGTRB Botany Coaching Dharmapuri | Arunai Academy">
-<meta property="og:description" content="Tamil Nadu's No.1 PGTRB Botany Coaching Institute - Arunai Academy, Dharmapuri, 14+ years of excellence & expert mentorship. Enroll today!">
-<meta property="og:image" content="https://arunaiacademypgtrbbotany.in/assets/images/logo.png">
-<meta property="og:url" content="https://arunaiacademypgtrbbotany.in/">
-<meta property="og:site_name" content="Arunai Academy">
-<meta property="og:locale" content="en_IN">
+    <meta property="og:title" content="PGTRB Botany Coaching Dharmapuri | Arunai Academy">
+    <meta property="og:description"
+        content="Tamil Nadu's No.1 PGTRB Botany Coaching Institute - Arunai Academy, Dharmapuri, 14+ years of excellence & expert mentorship. Enroll today!">
+    <meta property="og:image" content="https://arunaiacademypgtrbbotany.in/assets/images/logo.png">
+    <meta property="og:url" content="https://arunaiacademypgtrbbotany.in/">
+    <meta property="og:site_name" content="Arunai Academy">
+    <meta property="og:locale" content="en_IN">
 
-<!-- Twitter Card Meta Tags -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="PGTRB Botany Coaching Dharmapuri | Arunai Academy">
-<meta name="twitter:description" content="Tamil Nadu's No.1 PGTRB Botany Coaching Institute - Arunai Academy, Dharmapuri, 14+ years of excellence & expert mentorship. Enroll today!">
-<meta name="twitter:image" content="https://arunaiacademypgtrbbotany.in/assets/images/logo.png">
-<meta name="twitter:url" content="https://arunaiacademypgtrbbotany.in/">
-<meta name="twitter:site" content="@ArunaiAcademy">
-<meta name="twitter:creator" content="@ArunaiAcademy">
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="PGTRB Botany Coaching Dharmapuri | Arunai Academy">
+    <meta name="twitter:description"
+        content="Tamil Nadu's No.1 PGTRB Botany Coaching Institute - Arunai Academy, Dharmapuri, 14+ years of excellence & expert mentorship. Enroll today!">
+    <meta name="twitter:image" content="https://arunaiacademypgtrbbotany.in/assets/images/logo.png">
+    <meta name="twitter:url" content="https://arunaiacademypgtrbbotany.in/">
+    <meta name="twitter:site" content="@ArunaiAcademy">
+    <meta name="twitter:creator" content="@ArunaiAcademy">
 
-<script type="application/ld+json">
+    <script type="application/ld+json">
 {
   "@@context":"https://schema.org",
   "@type":"EducationalOrganization",
@@ -56,7 +58,7 @@
 }
 </script>
 
-<script type="application/ld+json">
+    <script type="application/ld+json">
 {
   "@@context":"https://schema.org",
   "@type":"WebSite",
@@ -71,96 +73,7 @@
 }
 </script>
 
-<script type="application/ld+json">
-{
-  "@@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "What courses does Arunai Academy offer?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Arunai Academy offers specialized coaching for PGTRB Botany and UGTRB Botany aspirants with expert faculty, comprehensive study materials, regular tests, and exam-focused preparation."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Why choose Arunai Academy for PGTRB Botany Coaching in Dharmapuri?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Established in 2012, Arunai Academy has 14+ years of experience in Botany coaching. The academy provides experienced faculty, structured classes, updated study materials, and regular mock tests."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can students from across Tamil Nadu join Arunai Academy?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. Arunai Academy welcomes PGTRB and UGTRB Botany aspirants from Dharmapuri and all districts of Tamil Nadu with classroom coaching designed according to the latest TRB syllabus."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Does Arunai Academy provide study materials and mock tests?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. Students receive comprehensive Botany study materials, previous year question paper discussions, topic-wise practice questions, and regular mock tests."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How can I enroll in Arunai Academy?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "You can enroll by contacting Arunai Academy through the official website or by phone. The admission team will guide you through course details, batch timings, and the enrollment process."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is the eligibility for PGTRB Botany Coaching?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Candidates who meet the educational qualifications prescribed by the Tamil Nadu Teachers Recruitment Board (TRB) can join the PGTRB Botany coaching program."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Does Arunai Academy cover the latest PGTRB Botany syllabus?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. The coaching program is regularly updated to match the latest Tamil Nadu TRB syllabus and exam pattern, ensuring students receive relevant and current preparation."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Are experienced faculty members available for Botany coaching?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. Arunai Academy's Botany coaching is led by experienced faculty members who provide conceptual learning, exam strategies, and individual guidance throughout the course."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How long has Arunai Academy been providing Botany coaching?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Arunai Academy has been providing exclusive PGTRB and UGTRB Botany coaching since 2012, helping aspirants prepare with confidence through expert guidance and structured learning."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How can I contact Arunai Academy for admission?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "You can contact Arunai Academy through the official website, phone, or by visiting the academy in Dharmapuri, Tamil Nadu to learn more about admissions, fees, and upcoming batches."
-      }
-    }
-  ]
-}
-</script>
-
-<script type="application/ld+json">
+    <script type="application/ld+json">
 {
   "@@context": "https://schema.org",
   "@type": "Service",
