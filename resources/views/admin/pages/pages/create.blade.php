@@ -121,14 +121,7 @@
                             <div class="invalid-feedback">{{ $message }}</div>
                         @enderror
                     </div>
-                    {{-- <div class="col-md-6">
-                        <label class="form-label">URL Slug</label>
-                        <input type="text" name="url_slug" class="form-control @error('url_slug') is-invalid @enderror"
-                            value="{{ old('url_slug') }}">
-                        @error('url_slug')
-                        <div class="invalid-feedback">{{ $message }}</div>
-                        @enderror
-                    </div> --}}
+                    
                 </div>
 
                 <div class="row mb-3">
