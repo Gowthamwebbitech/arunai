@@ -1,0 +1,74 @@
+# robots.txt for arunaiacademypgtrbbotany.in
+User-agent: Googlebot
+Allow: /
+Disallow: /admin/
+Disallow: /admin
+Disallow: /storage/
+Disallow: /vendor/
+Disallow: /node_modules/
+
+User-agent: Bingbot
+Allow: /
+Disallow: /admin/
+Disallow: /admin
+Disallow: /storage/
+Disallow: /vendor/
+Disallow: /node_modules/
+
+User-agent: Slurp
+Allow: /
+Disallow: /admin/
+Disallow: /admin
+Disallow: /storage/
+Disallow: /vendor/
+Disallow: /node_modules/
+
+User-agent: GPTBot
+Allow: /
+Disallow: /admin/
+Disallow: /storage/
+
+User-agent: Claude-Web
+Allow: /
+Disallow: /admin/
+Disallow: /storage/
+
+User-agent: PerplexityBot
+Allow: /
+Disallow: /admin/
+Disallow: /storage/
+
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /admin
+Disallow: /storage/
+Disallow: /vendor/
+Disallow: /node_modules/
+Disallow: /.env
+Disallow: /bootstrap/cache/
+Disallow: /config/
+Disallow: /database/
+Disallow: /routes/
+Disallow: /resources/
+Disallow: /app/
+Disallow: /artisan
+Disallow: /composer.json
+Disallow: /composer.lock
+Disallow: /package.json
+Disallow: /*.php$
+
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+# Sitemap location
+Sitemap: https://arunaiacademypgtrbbotany.in/sitemap.xml
