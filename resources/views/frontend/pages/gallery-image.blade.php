@@ -71,16 +71,6 @@
                 </p>
             </div>
 
-            <!-- Filter -->
-            {{-- <div class="gallery-filter">
-                <button class="filter-btn active" data-filter="all">All Photos</button>
-                <button class="filter-btn" data-filter="2019">2019</button>
-                <button class="filter-btn" data-filter="2022">2022</button>
-                <button class="filter-btn" data-filter="2024">2024</button>
-                <button class="filter-btn" data-filter="2025">2025</button>
-                <button class="filter-btn" data-filter="2026">2026</button>
-            </div> --}}
-
             <div class="gallery-filter">
                 <button class="filter-btn active" data-filter="all">All Photos</button>
                  @foreach ($allYears as $year)
@@ -93,7 +83,6 @@
 
             <div class="image-gallery" id="galleryContainer">
 
-
             </div>
         </div>
     </div>
@@ -105,13 +94,6 @@
         <span class="next-btn">&#10095;</span>
     </div>
 
-    {{-- <div class="lightbox" id="lightbox">
-        <button class="lightbox-close">✕</button>
-        <div class="lightbox-content">
-            <div id="lb-content" style="font-size:6rem;padding:2rem;"></div>
-            <p style="color:rgba(255,255,255,0.6);margin-top:1rem;font-size:0.9rem;">Arunai Academy – Always Success</p>
-        </div>
-    </div> --}}
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
         let galleryData = [];
@@ -148,7 +130,7 @@
                         <div class="gallery-placeholder">
                              <img src="{{ asset('uploads/gallery/${item.image}') }}" alt="Government Teacher Botany Coaching Tamil Nadu" />
                         </div>
-                        <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass open-lightbox"></i></div>
+                        <div class="gallery-overlay open-lightbox"></div>
                     </div>
                 `;
                     }

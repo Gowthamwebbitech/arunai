@@ -1,11 +1,5 @@
 @extends('frontend.layouts.app')
 
-@section('meta_title', '  ')
-
-@section('meta_description,  ')
-
-@section('meta_keyworlds', ' ')
-
 @section('content')
 
     <style>
@@ -67,12 +61,12 @@
         </div>
         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true">
-                <i class="fa-solid fa-chevron-left"></i>
+                <
             </span>
         </a>
         <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true">
-                <i class="fa-solid fa-chevron-right"></i>
+                >
             </span>
         </a>
     </div>
@@ -95,7 +89,7 @@
                             5.0 | 510+ Reviews
                         </div>
                         <div class="google-logo">
-                            <img src="{{ asset('assets/images/google-logo.png') }}"
+                            <img src="{{ asset('assets/images/google-logo.webp') }}"
                                 alt="Botany Exam Coaching Centre Tamil Nadu" />
                         </div>
                     </div>
@@ -121,13 +115,13 @@
                         </div>
                     </div>
                     <div class="laurel-wrapper">
-                        <span class="laurel-branch left"><img src="{{ asset('assets/images/flow-right.png') }}"
+                        <span class="laurel-branch left"><img src="{{ asset('assets/images/flow-right.webp') }}"
                                 alt="Assistant Professor Botany Coaching Tamil Nadu" /></span>
                         <div class="selection-count">
                             <span class="number">72</span>
                             <span class="label">CANDIDATES<br>SELECTED</span>
                         </div>
-                        <span class="laurel-branch right"><img src="{{ asset('assets/images/flow-right.png') }}"
+                        <span class="laurel-branch right"><img src="{{ asset('assets/images/flow-right.webp') }}"
                                 alt="College Lecturer Botany Coaching Tamil Nadu" /></span>
                     </div>
                 </div>
@@ -146,13 +140,13 @@
                         </div>
                     </div>
                     <div class="laurel-wrapper">
-                        <span class="laurel-branch left"><img src="{{ asset('assets/images/flow-right.png') }}"
+                        <span class="laurel-branch left"><img src="{{ asset('assets/images/flow-right.webp') }}"
                                 alt="Botany Recruitment Coaching Centre Tamil Nadu" /></span>
                         <div class="selection-count">
                             <span class="number">68</span>
                             <span class="label">CANDIDATES<br>SELECTED</span>
                         </div>
-                        <span class="laurel-branch right"><img src="{{ asset('assets/images/flow-right.png') }}"
+                        <span class="laurel-branch right"><img src="{{ asset('assets/images/flow-right.webp') }}"
                                 alt="TNPSC Botany Coaching Centre Tamil Nadu" /></span>
                     </div>
                 </div>
@@ -171,13 +165,13 @@
                         </div>
                     </div>
                     <div class="laurel-wrapper">
-                        <span class="laurel-branch left"><img src="{{ asset('assets/images/flow-right.png') }}"
+                        <span class="laurel-branch left"><img src="{{ asset('assets/images/flow-right.webp') }}"
                                 alt="SET Botany Coaching Classes Tamil Nadu " /></span>
                         <div class="selection-count">
                             <span class="number">53</span>
                             <span class="label">CANDIDATES<br>SELECTED</span>
                         </div>
-                        <span class="laurel-branch right"><img src="{{ asset('assets/images/flow-right.png') }}"
+                        <span class="laurel-branch right"><img src="{{ asset('assets/images/flow-right.webp') }}"
                                 alt="CSIR NET Botany Coaching Centre Tamil Nadu" /></span>
                     </div>
                 </div>
@@ -196,13 +190,13 @@
                         </div>
                     </div>
                     <div class="laurel-wrapper">
-                        <span class="laurel-branch left"><img src="{{ asset('assets/images/flow-right.png') }}"
+                        <span class="laurel-branch left"><img src="{{ asset('assets/images/flow-right.webp') }}"
                                 alt="UGTRB Botany Coaching Centre Tamil Nadu" /></span>
                         <div class="selection-count">
                             <span class="number">58</span>
                             <span class="label">CANDIDATES<br>SELECTED</span>
                         </div>
-                        <span class="laurel-branch right"><img src="{{ asset('assets/images/flow-right.png') }}"
+                        <span class="laurel-branch right"><img src="{{ asset('assets/images/flow-right.webp') }}"
                                 alt="UGTRB Botany Coaching Institute Tamil Nadu" /></span>
                     </div>
                 </div>
@@ -417,7 +411,7 @@
                             <img src="{{ asset('uploads/gallery/' . $item->image) }}"
                                 alt="PGTRB Botany Live Classes Tamil Nadu" />
                         </div>
-                        <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass open-lightbox"></i></div>
+                        <div class="gallery-overlay open-lightbox"></div>
                     </div>
                 @endforeach
             </div>

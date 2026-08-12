@@ -224,7 +224,7 @@
     <div class="login-container">
         <!-- Left Content -->
         <div class="login-left">
-            <img src="{{ asset('assets/images/logo.png') }}" class="sidebar-logo" alt="Logo">
+            <img src="{{ asset('assets/images/logo.webp') }}" class="sidebar-logo" alt="Logo">
 
         </div>
 

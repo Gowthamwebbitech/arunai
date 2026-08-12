@@ -689,13 +689,13 @@
                                 </div>
                                 <div class="laurel-wrapper">
                                     <span class="laurel-branch left"><img
-                                            src="{{ asset('assets/images/flow-right.png') }}" /></span>
+                                            src="{{ asset('assets/images/flow-right.webp') }}" /></span>
                                     <div class="selection-count">
                                         <span class="number">72</span>
                                         <span class="label">CANDIDATES<br>SELECTED</span>
                                     </div>
                                     <span class="laurel-branch right"><img
-                                            src="{{ asset('assets/images/flow-right.png') }}" /></span>
+                                            src="{{ asset('assets/images/flow-right.webp') }}" /></span>
                                 </div>
                             </div>
                             <div class="card-footer">
@@ -714,13 +714,13 @@
                                 </div>
                                 <div class="laurel-wrapper">
                                     <span class="laurel-branch left"><img
-                                            src="{{ asset('assets/images/flow-right.png') }}" /></span>
+                                            src="{{ asset('assets/images/flow-right.webp') }}" /></span>
                                     <div class="selection-count">
                                         <span class="number">68</span>
                                         <span class="label">CANDIDATES<br>SELECTED</span>
                                     </div>
                                     <span class="laurel-branch right"><img
-                                            src="{{ asset('assets/images/flow-right.png') }}" /></span>
+                                            src="{{ asset('assets/images/flow-right.webp') }}" /></span>
                                 </div>
                             </div>
                             <div class="card-footer">
@@ -739,13 +739,13 @@
                                 </div>
                                 <div class="laurel-wrapper">
                                     <span class="laurel-branch left"><img
-                                            src="{{ asset('assets/images/flow-right.png') }}" /></span>
+                                            src="{{ asset('assets/images/flow-right.webp') }}" /></span>
                                     <div class="selection-count">
                                         <span class="number">53</span>
                                         <span class="label">CANDIDATES<br>SELECTED</span>
                                     </div>
                                     <span class="laurel-branch right"><img
-                                            src="{{ asset('assets/images/flow-right.png') }}" /></span>
+                                            src="{{ asset('assets/images/flow-right.webp') }}" /></span>
                                 </div>
                             </div>
                             <div class="card-footer">
@@ -764,13 +764,13 @@
                                 </div>
                                 <div class="laurel-wrapper">
                                     <span class="laurel-branch left"><img
-                                            src="{{ asset('assets/images/flow-right.png') }}" /></span>
+                                            src="{{ asset('assets/images/flow-right.webp') }}" /></span>
                                     <div class="selection-count">
                                         <span class="number">58</span>
                                         <span class="label">CANDIDATES<br>SELECTED</span>
                                     </div>
                                     <span class="laurel-branch right"><img
-                                            src="{{ asset('assets/images/flow-right.png') }}" /></span>
+                                            src="{{ asset('assets/images/flow-right.webp') }}" /></span>
                                 </div>
                             </div>
                             <div class="card-footer">
