@@ -9,7 +9,7 @@
              <div class="row align-items-center row-bg2">
                  <div class="col-lg-2 col-md-6 col-6">
                      <div class="vl-logo">
-                         <a href="{{ route('index') }}"><img src="{{ asset('assets/images/logo.png') }}"
+                         <a href="{{ route('index') }}"><img src="{{ asset('assets/images/logo.webp') }}"
                                  alt=""></a>
                      </div>
                  </div>
@@ -72,7 +72,7 @@
          <div class="vl-offcanvas-wrapper">
              <div class="vl-offcanvas-header d-flex justify-content-between align-items-center mb-90">
                  <div class="vl-offcanvas-logo">
-                     <a href="{{ url(request()->slug) }}"><img src="{{ asset('assets/images/logo.png') }}"
+                     <a href="{{ url(request()->slug) }}"><img src="{{ asset('assets/images/logo.webp') }}"
                              alt=""></a>
                  </div>
                  <div class="vl-offcanvas-close">

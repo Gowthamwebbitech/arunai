@@ -143,7 +143,7 @@
     <!--<div class="preloader">-->
     <!--    <div class="loading-container">-->
     <!--        <div class="loading"></div>-->
-    <!--        <div id="loading-icon"><img src="{{ asset('assets/images/logo.png') }}" alt=""></div>-->
+    <!--        <div id="loading-icon"><img src="{{ asset('assets/images/logo.webp') }}" alt=""></div>-->
     <!--    </div>-->
     <!--</div>-->
     <!--===== PRELOADER ENDS =======-->
@@ -165,7 +165,7 @@
                 <div class="row align-items-center row-bg2">
                     <div class="col-lg-2 col-md-6 col-6">
                         <div class="vl-logo">
-                            <a href="{{ route('index') }}"><img src="{{ asset('assets/images/logo.png') }}"
+                            <a href="{{ route('index') }}"><img src="{{ asset('assets/images/logo.webp') }}"
                                     alt=""></a>
                         </div>
                     </div>
@@ -215,7 +215,7 @@
             <div class="vl-offcanvas-wrapper">
                 <div class="vl-offcanvas-header d-flex justify-content-between align-items-center mb-90">
                     <div class="vl-offcanvas-logo">
-                        <a href="{{ route('landingpages') }}"><img src="{{ asset('assets/images/logo.png') }}"
+                        <a href="{{ route('landingpages') }}"><img src="{{ asset('assets/images/logo.webp') }}"
                                 alt=""></a>
                     </div>
                     <div class="vl-offcanvas-close">
@@ -2004,7 +2004,7 @@
                     <div class="row">
                         <div class="col-lg-4 col-md-6">
                             <div class="footer-logo1">
-                                <img src="{{ asset('assets/images/logo.png') }}" class="" alt="">
+                                <img src="{{ asset('assets/images/logo.webp') }}" class="" alt="">
                                 <div class="space16"></div>
                                 <p>We provide expert best services technology to meet your unique needs. Whether you’re
                                     looking.</p>

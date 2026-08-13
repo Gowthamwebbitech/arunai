@@ -11,18 +11,13 @@ class GalleryController extends Controller
     // Handles /gallery-image/{years}
     public function show()
     {
-        // Get all unique years for the filter/tabs
         $allYears = Gallery::select('title')
             ->distinct()
             ->orderBy('title', 'desc')
             ->pluck('title');
-        // dd($allYears);
-        // // Filter by year if provided, otherwise get all
-        // if ($years && $years !== 'all') {
-        //     $galleries = Gallery::where('title', $years)->latest()->get();
-        // } else {
+
         $galleries = Gallery::latest()->get();
-        // }
+
 
         return view('frontend.pages.gallery-image', compact('allYears', 'galleries'));
     }
@@ -34,7 +29,6 @@ class GalleryController extends Controller
 
             $url = $video->youtube_url;
 
-            // Extract video ID from any YouTube format
             preg_match(
                 '/(youtu\.be\/|v=|embed\/|shorts\/)([A-Za-z0-9_-]+)/',
                 $url,

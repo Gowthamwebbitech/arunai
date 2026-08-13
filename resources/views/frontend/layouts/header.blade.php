@@ -1,10 +1,12 @@
+
 <!-- ══ NAVBAR ══ -->
 <nav id="navbar">
     <div class="nav-inner">
         <a href="{{ route('index') }}" class="nav-logo">
-            <img src="{{ asset('assets/images/logo-black.png') }}" alt="PGTRB Botany Coaching Centre Tamil Nadu" />
+            <img src="{{ asset('assets/images/logo-black.webp') }}" alt="PGTRB Botany Coaching Centre Tamil Nadu" />
             <div class="d-md-none d-block botony-img">
-                <img class="mt-3" src="{{ asset('assets/images/botony.png') }}" alt="PGTRB Botany Coaching Institute Tamil Nadu" />
+                <img class="mt-3" src="{{ asset('assets/images/botony.png') }}"
+                    alt="PGTRB Botany Coaching Institute Tamil Nadu" />
             </div>
         </a>
         <ul class="nav-menu mb-0">
@@ -44,32 +46,3 @@
     <a href="{{ route('contact') }}">Contact Us</a>
     <li class="highlight-btn"><a href="{{ route('index') }}#study">Study Material</a></li>
 </div>
-
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        const links = document.querySelectorAll(".nav-menu a");
-
-        // Highlight based on current URL
-        const currentPath = window.location.pathname.split("/").pop();
-
-        links.forEach(link => {
-            const linkPath = link.getAttribute("href").split("/").pop();
-
-            if (linkPath === currentPath) {
-                link.classList.add("active");
-
-                // If inside dropdown, also highlight parent
-                const dropdown = link.closest(".nav-dropdown");
-                if (dropdown) {
-                    dropdown.querySelector("a").classList.add("active");
-                }
-            }
-
-            // Click event to switch active
-            link.addEventListener("click", function () {
-                links.forEach(l => l.classList.remove("active"));
-                this.classList.add("active");
-            });
-        });
-    });
-</script>

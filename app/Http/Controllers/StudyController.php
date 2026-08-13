@@ -17,11 +17,7 @@ class StudyController extends Controller
         $materials = StudyMaterial::latest()->get();
         return view('frontend.pages.study-material', compact('materials'));
     }
-    //  public function indexpage()
-    // {
-    //     $materials = StudyMaterial::latest()->get();
-    //     return view('frontend.pages.index', compact('materials'));
-    // }
+
 
     public function store(Request $request)
     {

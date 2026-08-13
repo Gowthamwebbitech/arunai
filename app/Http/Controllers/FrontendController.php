@@ -15,7 +15,9 @@ use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Log;
 
 
-class FrontendController extends Controller
+
+
+class FrontendController extends  Controller
 {
     //
     public function index()
@@ -69,7 +71,7 @@ class FrontendController extends Controller
                 ->orderByRaw('CAST(rank AS UNSIGNED) ASC')
                 ->limit(10)
                 ->get();
-       
+
         $videos = MediaVideo::limit(3)->latest()->get();
         $gallery = Gallery::latest()->limit(6)->get();
 
@@ -87,7 +89,7 @@ class FrontendController extends Controller
                 ? "https://www.youtube.com/embed/" . $videoId
                 : null;
         }
-        
+
 
         return view('frontend.landing-pages.final-landingpage', compact('services', 'page','banners','achievers','videos','gallery'));
     }

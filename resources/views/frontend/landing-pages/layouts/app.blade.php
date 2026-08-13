@@ -15,23 +15,21 @@
     <meta name="bingbot" content="index, follow">
 
     <meta property="og:type" content="website">
-    <meta property="og:title" content="PGTRB Botany Coaching Dharmapuri | Arunai Academy">
-    <meta property="og:description"
-        content="Tamil Nadu's No.1 PGTRB Botany Coaching Institute - Arunai Academy, Dharmapuri, 14+ years of excellence & expert mentorship. Enroll today!">
-    <meta property="og:image" content="https://arunaiacademypgtrbbotany.in/assets/images/logo.png">
-    <meta property="og:url" content="https://arunaiacademypgtrbbotany.in/">
-    <meta property="og:site_name" content="Arunai Academy">
-    <meta property="og:locale" content="en_IN">
+<meta property="og:title" content="PGTRB Botany Coaching Dharmapuri | Arunai Academy">
+<meta property="og:description" content="Tamil Nadu's No.1 PGTRB Botany Coaching Institute - Arunai Academy, Dharmapuri, 14+ years of excellence & expert mentorship. Enroll today!">
+<meta property="og:image" content="https://arunaiacademypgtrbbotany.in/assets/images/logo.webp">
+<meta property="og:url" content="https://arunaiacademypgtrbbotany.in/">
+<meta property="og:site_name" content="Arunai Academy">
+<meta property="og:locale" content="en_IN">
 
-    <!-- Twitter Card Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="PGTRB Botany Coaching Dharmapuri | Arunai Academy">
-    <meta name="twitter:description"
-        content="Tamil Nadu's No.1 PGTRB Botany Coaching Institute - Arunai Academy, Dharmapuri, 14+ years of excellence & expert mentorship. Enroll today!">
-    <meta name="twitter:image" content="https://arunaiacademypgtrbbotany.in/assets/images/logo.png">
-    <meta name="twitter:url" content="https://arunaiacademypgtrbbotany.in/">
-    <meta name="twitter:site" content="@ArunaiAcademy">
-    <meta name="twitter:creator" content="@ArunaiAcademy">
+<!-- Twitter Card Meta Tags -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="PGTRB Botany Coaching Dharmapuri | Arunai Academy">
+<meta name="twitter:description" content="Tamil Nadu's No.1 PGTRB Botany Coaching Institute - Arunai Academy, Dharmapuri, 14+ years of excellence & expert mentorship. Enroll today!">
+<meta name="twitter:image" content="https://arunaiacademypgtrbbotany.in/assets/images/logo.webp">
+<meta name="twitter:url" content="https://arunaiacademypgtrbbotany.in/">
+<meta name="twitter:site" content="@ArunaiAcademy">
+<meta name="twitter:creator" content="@ArunaiAcademy">
 
     <script type="application/ld+json">
 {
@@ -41,8 +39,8 @@
   "name":"Arunai Academy",
   "alternateName":"Arunai Academy for PGTRB & UGTRB Botany",
   "url":"https://arunaiacademypgtrbbotany.in/",
-  "logo":"https://arunaiacademypgtrbbotany.in/assets/images/logo.png",
-  "image":"https://arunaiacademypgtrbbotany.in/assets/images/logo.png",
+  "logo":"https://arunaiacademypgtrbbotany.in/assets/images/logo.webp",
+  "image":"https://arunaiacademypgtrbbotany.in/assets/images/logo.webp",
   "description":"Tamil Nadu's No.1 PGTRB & UGTRB Botany Coaching Institute in Dharmapuri with 14+ years of excellence.",
   "telephone":"+919500244679",
   "email":"arunaiacademyforbotany100@gmail.com",
@@ -146,7 +144,7 @@
     <div class="preloader">
         <div class="loading-container">
             <div class="loading"></div>
-            <div id="loading-icon"><img src="{{ asset('assets/images/logo.png') }}" alt=""></div>
+            <div id="loading-icon"><img src="{{ asset('assets/images/logo.webp') }}" alt=""></div>
         </div>
     </div>
     <!--===== PRELOADER ENDS =======-->

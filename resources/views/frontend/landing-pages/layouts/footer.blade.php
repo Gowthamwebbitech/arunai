@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-lg-4 col-md-6">
                 <div class="footer-logo1">
-                    <img src="{{ asset('assets/images/logo.png') }}" class="" alt="">
+                    <img src="{{ asset('assets/images/logo.webp') }}" class="" alt="">
                     <div class="space16"></div>
                     <p>We provide expert best services technology to meet your unique needs. Whether you’re
                         looking.</p>

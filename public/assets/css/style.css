@@ -999,7 +999,7 @@ footer::before {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: rgba(255, 255, 255, 0.6);
+    color: rgba(255, 255, 255, 0.99);
     text-decoration: none;
     font-size: 0.9rem;
     transition: var(--transition);
@@ -2865,7 +2865,7 @@ ul {
 }
 
 .highlight-btn a {
-    color: #00c497;
+    color: #007777;
 }
 
 .highlight-btn .active {
@@ -2978,7 +2978,7 @@ ul {
 }
 
 .our-achivers {
-    background: linear-gradient(45deg, #003503d6, #012200b4), url(../images/green-bg.jpeg);
+    background: linear-gradient(45deg, #003503d6, #012200b4), url(../images/green-bg.webp);
 
     border-radius: 35px;
     background-position: center;
@@ -3072,8 +3072,15 @@ ul {
     overflow: unset !important;
 }
 
-.achievers-slider .swiper-pagination span {
-    background: rgb(255, 255, 255);
+.achievers-slider .swiper-pagination span.swiper-pagination-bullet {
+    background: #006666;
+    width: 14px;
+    height: 14px;
+    margin: 0 8px;
+    padding: 10px;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 50%;
 }
 
 .achiever-card .achiever-rank span {
@@ -3393,175 +3400,331 @@ ul {
     display: flex;
     align-items: center;
     justify-content: center;
+    color: #fff;
+    font-size: 20px;
     width: 40px;
     height: 40px;
-    background: rgb(255, 255, 255);
+    background: rgb(0 0 0);
     border-radius: 50%;
-    filter: invert(1);
+    /* filter: invert(1); */
 }
 
-.home-banner .carousel-control-prev-icon i {
-    color: #00320d
-}
 
 .home-banner .carousel-control-next-icon {
     display: flex;
     align-items: center;
     justify-content: center;
+    color: #fff;
+    font-size: 20px;
     width: 40px;
     height: 40px;
-    background: rgb(255, 255, 255);
+    background: rgb(0 0 0);
     border-radius: 50%;
-    filter: invert(1);
+}
+
+.home-banner .carousel-control-prev-icon i {
+    color: #ebebeb !important
 }
 
 .home-banner .carousel-control-next-icon i {
-    color: #00320d
+    color: #ebebeb !important
 }
 
 .seo-title {
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 700;
     color: #00320d;
     font-family: 'Playfair Display', serif;
     margin-bottom: 20px;
 }
-.seo-title span{
+
+.seo-title span {
     color: #007a3d;
 }
-.title-card{
+
+.title-card {
     background: linear-gradient(135deg, #d8ffe5, #eef7f2);
     padding: 20px;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
-.revice-sec{
+
+.revice-sec {
     background: #fcfbe8;
     padding: 30px 0;
 }
-.google-review-card{
-    display:flex;
-    align-items:center;
-    justify-content:center;
+
+.google-review-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     /* max-width:720px; */
     padding: 7px 24px;
-    background:#fff;
+    background: #fff;
     gap: 6px;
-    border-radius:30px;
-    border:1px solid #ececec;
-    box-shadow:0 12px 30px rgba(0,0,0,.08);
-    flex-wrap:wrap;
-    text-decoration:none;
+    border-radius: 30px;
+    border: 1px solid #ececec;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, .08);
+    flex-wrap: wrap;
+    text-decoration: none;
     width: max-content;
     margin: auto;
 }
 
-.review-text{
+.review-text {
     font-size: 25px;
-    font-weight:700;
-    color:#1f2937;
-    text-decoration:none;
-    text-transform:uppercase;
+    font-weight: 700;
+    color: #1f2937;
+    text-decoration: none;
+    text-transform: uppercase;
 }
 
-.review-stars{
-    display:flex;
-    text-decoration:none;
-    gap:4px;
+.review-stars {
+    display: flex;
+    text-decoration: none;
+    gap: 4px;
 }
 
-.review-stars i{
-    color:#fbbc04;
-    text-decoration:none;
-    font-size:14px;
+.review-stars i {
+    color: #fbbc04;
+    text-decoration: none;
+    font-size: 14px;
 }
 
-.review-count{
-    font-size:16px;
-    font-weight:600;
-    text-decoration:none;
-    color:#1f2937;
+.review-count {
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #1f2937;
 }
-.z-99{
-    z-index:99;
+
+.z-99 {
+    z-index: 99;
     margin-right: 80px;
 }
-.google-logo{
-    font-size:20px;
-    font-weight:700;
-    font-family:Arial, Helvetica, sans-serif;
-    text-decoration:none;
-    letter-spacing:-1px;
+
+.google-logo {
+    font-size: 20px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    letter-spacing: -1px;
 }
-a{
-    text-decoration:none !important;
+
+a {
+    text-decoration: none !important;
 
 }
-.google-logo img{
+
+.google-logo img {
     height: 25px;
 }
 
-.google-logo .blue{
-    color:#4285F4;
+.google-logo .blue {
+    color: #4285F4;
     background: transparent;
 }
 
-.google-logo .red{
-    color:#EA4335;
+.google-logo .red {
+    color: #EA4335;
 }
 
-.google-logo .yellow{
-    color:#FBBC05;
+.google-logo .yellow {
+    color: #FBBC05;
 }
 
-.google-logo .green{
+.google-logo .green {
     background: transparent;
-    color:#34A853;
+    color: #34A853;
 }
 
-@media(max-width:768px){
+@media(max-width:768px) {
 
-    .google-review-card{
-        padding:18px 20px;
-        border-radius:25px;
-        gap:12px;
+    .google-review-card {
+        padding: 18px 20px;
+        border-radius: 25px;
+        gap: 12px;
     }
 
     .review-text,
-    .review-count{
-        font-size:20px;
+    .review-count {
+        font-size: 20px;
     }
 
-    .review-stars i{
-        font-size:18px;
+    .review-stars i {
+        font-size: 18px;
     }
 
-    .google-logo{
-        font-size:24px;
+    .google-logo {
+        font-size: 24px;
     }
 
 }
 
 
-.review-btn{
-    display:inline-flex;
-    align-items:center;
-    gap:8px;
-    color:#0d6efd;
-    font-size:20px;
-    font-weight:600;
-    text-decoration:none;
-    transition:.3s;
+.review-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #0d6efd;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: .3s;
 }
 
-.review-btn:hover{
-    color:#0a58ca;
+.review-btn:hover {
+    color: #0a58ca;
 }
 
-.review-btn i{
-    transition:.3s;
+.review-btn i {
+    transition: .3s;
 }
 
-.review-btn:hover i{
-    transform:translateX(5px);
+.review-btn:hover i {
+    transform: translateX(5px);
+}
+
+@media screen and (max-width:575px) {
+    .review-stars i {
+        font-size: 14px;
+    }
+
+    .review-text,
+    .review-count {
+        font-size: 12px;
+    }
+    .footer-brand p{
+        color: #fff;
+    }
+    .footer-col h3{
+        color: #fff;
+    }
+    .footer-col ul li a{
+        color: #fff;
+    }
+    .footer-contact-item{
+        color: #fff;
+    }
+}
+
+#preloader {
+    position: fixed;
+    inset: 0;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99999;
+    transition: opacity .4s ease, visibility .4s ease;
+}
+
+#preloader.hide {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.loader {
+    width: 55px;
+    height: 55px;
+    border: 5px solid #e5e5e5;
+    border-top: 5px solid #009245;
+    /* Your brand color */
+    border-radius: 50%;
+    animation: spin .8s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.video-thumb {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.video-thumb img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    display: block;
+}
+
+.play-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70px;
+    height: 70px;
+    background: #ff0000;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    transition: .3s;
+}
+
+.video-thumb:hover .play-icon {
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+#carouselExampleIndicators .carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
+    /* Adjust width as needed */
+    opacity: 0.8;
+    /* Slightly transparent by default */
+    transition: opacity 0.3s ease;
+    /* Smooth fade effect */
+}
+
+/* Ensure links don't have an underline */
+#carouselExampleIndicators .carousel-control-prev:hover,
+.carousel-control-next:hover {
+    text-decoration: none;
+    opacity: 1;
+    /* Full opacity on hover */
+}
+
+/* Style for the Font Awesome icons inside the links */
+#carouselExampleIndicators .carousel-control-prev i,
+.carousel-control-next i {
+    color: #ffffff;
+    /* Icon color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Semi-transparent dark background */
+    font-size: 1.5rem;
+    /* Icon size */
+    padding: 15px;
+    /* Space around the icon */
+    border-radius: 50%;
+    /* Makes it a perfect circle */
+    display: flex;
+    /* To center the icon inside the circle */
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    /* Fixed width for circle */
+    height: 50px;
+    /* Fixed height for circle */
+    transition: background-color 0.3s ease;
+    /* Smooth background change */
+}
+
+/* Hover effect for the icon circle */
+#carouselExampleIndicators .carousel-control-prev:hover i,
+.carousel-control-next:hover i {
+    background-color: rgba(0, 0, 0, 0.8);
+    /* Darker background on hover */
 }

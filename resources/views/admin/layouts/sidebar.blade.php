@@ -6,13 +6,13 @@
 
     <!-- HEADER -->
     <div class="sidebar-header">
-        <img src="{{ asset('assets/images/logo.png') }}" class="sidebar-logo" alt="Logo">
+        <img src="{{ asset('assets/images/logo.webp') }}" class="sidebar-logo" alt="Logo">
 
         <button id="sidebarToggle" class="sidebar-toggle">
             <span class="open-icon"><i class="fa-solid fa-x" style="color: rgb(243, 4, 4);"></i></span>
         </button>
     </div>
-    
+
     <ul class="sidebar-menu">
         <li>
             <a href="{{route('admin.dashboard')}}" class="active">
