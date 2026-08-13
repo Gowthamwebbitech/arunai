@@ -5,7 +5,8 @@
                 <div class="footer-logo1">
                     <img src="{{ asset('assets/images/logo.webp') }}" class="" alt="">
                     <div class="space16"></div>
-                    <p>Arunai Academy offers 15+ years of expert PGTRB and UGTRB Botany coaching. Join classes today.</p>
+                    <p>We provide expert best services technology to meet your unique needs. Whether you’re
+                        looking.</p>
                     <div class="space24"></div>
                     <ul>
                         <li><a target="_blank" rel="noopener"
