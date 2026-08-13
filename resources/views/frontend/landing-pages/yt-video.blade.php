@@ -81,7 +81,7 @@
             @foreach ($videos as $video)
                 @if ($video->embed_url)
                     <div class="video-card ">
-                        <div class="video-thumb">
+                        <div class="video-thumb" style="overflow: unset">
                             <iframe width="100%" height="280" src="{{ $video->embed_url }}"
                                 title="YouTube video player" frameborder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"

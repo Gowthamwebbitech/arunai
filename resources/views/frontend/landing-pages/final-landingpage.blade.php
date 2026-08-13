@@ -485,24 +485,24 @@
                                 <div class="row">
                                     <div class="col-lg-4 col-md-4 col-6" data-aos-duration="800">
                                         <div class="counter-box">
-                                            <h2><span class="counter">200</span>K</h2>
+                                            <h2><span class="counter">5,000</span>+</h2>
                                             <div class="space16"></div>
-                                            <p>Happy Customer</p>
+                                            <p>Students Trained </p>
                                         </div>
                                     </div>
                                     <div class="col-lg-4 col-md-4 col-6" data-aos-duration="900">
                                         <div class="counter-box">
-                                            <h2><span class="counter">20</span>+</h2>
+                                            <h2><span class="counter">15</span>+</h2>
                                             <div class="space16"></div>
-                                            <p>Years Experience</p>
+                                            <p>Years Experience </p>
                                         </div>
                                     </div>
                                     <div class="col-lg-4 col-md-4" data-aos-duration="1000">
                                         <div class="space30 d-md-none d-block"></div>
                                         <div class="counter-box box2">
-                                            <h2><span class="counter">24</span>/<span class="counter">7</span></h2>
+                                            <h2><span class="counter">320</span>+</h2>
                                             <div class="space16"></div>
-                                            <p>Customer Support</p>
+                                            <p>Rank Holders </p>
                                         </div>
                                     </div>
                                 </div>

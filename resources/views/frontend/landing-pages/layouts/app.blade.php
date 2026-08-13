@@ -15,21 +15,22 @@
     <meta name="bingbot" content="index, follow">
 
     <meta property="og:type" content="website">
-<meta property="og:title" content="PGTRB Botany Coaching Dharmapuri | Arunai Academy">
-<meta property="og:description" content="Tamil Nadu's No.1 PGTRB Botany Coaching Institute - Arunai Academy, Dharmapuri, 14+ years of excellence & expert mentorship. Enroll today!">
-<meta property="og:image" content="https://arunaiacademypgtrbbotany.in/assets/images/logo.webp">
-<meta property="og:url" content="https://arunaiacademypgtrbbotany.in/">
-<meta property="og:site_name" content="Arunai Academy">
-<meta property="og:locale" content="en_IN">
+    <meta property="og:title" content="@yield('meta_title')">
+    <meta property="og:description" content="@yield('meta_description')">
+    <meta property="og:image" content="https://arunaiacademypgtrbbotany.in/assets/images/logo.webp">
+    <meta property="og:url" content="https://arunaiacademypgtrbbotany.in/">
+    <meta property="og:site_name" content="Arunai Academy">
+    <meta property="og:locale" content="en_IN">
 
-<!-- Twitter Card Meta Tags -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="PGTRB Botany Coaching Dharmapuri | Arunai Academy">
-<meta name="twitter:description" content="Tamil Nadu's No.1 PGTRB Botany Coaching Institute - Arunai Academy, Dharmapuri, 14+ years of excellence & expert mentorship. Enroll today!">
-<meta name="twitter:image" content="https://arunaiacademypgtrbbotany.in/assets/images/logo.webp">
-<meta name="twitter:url" content="https://arunaiacademypgtrbbotany.in/">
-<meta name="twitter:site" content="@ArunaiAcademy">
-<meta name="twitter:creator" content="@ArunaiAcademy">
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="@yield('meta_title')">
+    <meta name="twitter:description"
+        content="@yield('meta_description')">
+    <meta name="twitter:image" content="https://arunaiacademypgtrbbotany.in/assets/images/logo.webp">
+    <meta name="twitter:url" content="https://arunaiacademypgtrbbotany.in/">
+    <meta name="twitter:site" content="@ArunaiAcademy">
+    <meta name="twitter:creator" content="@ArunaiAcademy">
 
     <script type="application/ld+json">
 {
@@ -167,11 +168,11 @@
     @include('frontend.landing-pages.layouts.footer')
 
     <script>
-        document.querySelectorAll('.category-menu li').forEach(function(item) {
-            item.addEventListener('click', function() {
+        document.querySelectorAll('.category-menu li').forEach(function (item) {
+            item.addEventListener('click', function () {
 
                 // remove active from all
-                document.querySelectorAll('.category-menu li').forEach(function(li) {
+                document.querySelectorAll('.category-menu li').forEach(function (li) {
                     li.classList.remove('active');
 
                     // remove arrow if exists

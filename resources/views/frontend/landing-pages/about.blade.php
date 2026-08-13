@@ -4,15 +4,8 @@
     <div class="container">
         <div class="about-grid">
             <div class="about-img-wrap ">
-                <div class="d-md-none d-block about-text text-start">
-                    <div class="section-tag text-start">About Us</div>
-                    <h2 class="section-title text-start">Building Dreams,<br /><span class="accent">One
-                            Student at a
-                            Time</span>
-                    </h2>
-                </div>
                 <div class="about-img-main">
-                    <img src="{{ asset('assets/images/graduation-cap.png') }}" />
+                    <img src="{{ asset('assets/images/graduation-cap.webp') }}" />
                 </div>
                 <div class="about-badge-float">
                     <div class="big-num">15+</div>
@@ -20,7 +13,7 @@
                 </div>
             </div>
             <div class="about-text">
-                <div class="d-md-block d-none">
+                <div class="">
                     <div class="section-tag">About Us</div>
                     <h2 class="section-title">Building Dreams,<br /><span class="accent">One Student at a
                             Time</span>

@@ -291,12 +291,6 @@
         <div class="container">
             <div class="about-grid">
                 <div class="about-img-wrap reveal">
-                    <div class="d-md-none d-block about-text text-start">
-                        <div class="section-tag text-start">About Us</div>
-                        <h2 class="section-title text-start">Building Dreams,<br /><span class="accent">One Student at a
-                                Time</span>
-                        </h2>
-                    </div>
                     <div class="about-img-main">
                         <img src="{{ asset('assets/images/graduation-cap.webp') }}"
                             alt="UGTRB Botany Online Classes Tamil Nadu" />
@@ -307,7 +301,7 @@
                     </div>
                 </div>
                 <div class="about-text reveal">
-                    <div class="d-md-block d-none">
+                    <div class="">
                         <div class="section-tag">About Us</div>
                         <h2 class="section-title">Building Dreams,<br /><span class="accent">One Student at a Time</span>
                         </h2>

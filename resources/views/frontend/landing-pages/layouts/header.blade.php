@@ -72,8 +72,7 @@
          <div class="vl-offcanvas-wrapper">
              <div class="vl-offcanvas-header d-flex justify-content-between align-items-center mb-90">
                  <div class="vl-offcanvas-logo">
-                     <a href="{{ url(request()->slug) }}"><img src="{{ asset('assets/images/logo.webp') }}"
-                             alt=""></a>
+                     <a href="{{ url(request()->slug) }}"><img src="{{ asset('assets/images/logo.webp') }}" alt=""></a>
                  </div>
                  <div class="vl-offcanvas-close">
                      <button class="vl-offcanvas-close-toggle"><i class="fa-solid fa-xmark"></i></button>
