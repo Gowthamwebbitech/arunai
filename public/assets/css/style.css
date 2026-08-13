@@ -999,7 +999,7 @@ footer::before {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: rgba(255, 255, 255, 0.6);
+    color: rgba(255, 255, 255, 0.99);
     text-decoration: none;
     font-size: 0.9rem;
     transition: var(--transition);
@@ -2865,7 +2865,7 @@ ul {
 }
 
 .highlight-btn a {
-    color: #00c497;
+    color: #007777;
 }
 
 .highlight-btn .active {
@@ -3072,8 +3072,15 @@ ul {
     overflow: unset !important;
 }
 
-.achievers-slider .swiper-pagination span {
-    background: rgb(255, 255, 255);
+.achievers-slider .swiper-pagination span.swiper-pagination-bullet {
+    background: #006666;
+    width: 14px;
+    height: 14px;
+    margin: 0 8px;
+    padding: 10px;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 50%;
 }
 
 .achiever-card .achiever-rank span {
@@ -3404,7 +3411,7 @@ ul {
 
 
 .home-banner .carousel-control-next-icon {
-   display: flex;
+    display: flex;
     align-items: center;
     justify-content: center;
     color: #fff;
@@ -3587,6 +3594,18 @@ a {
     .review-count {
         font-size: 12px;
     }
+    .footer-brand p{
+        color: #fff;
+    }
+    .footer-col h3{
+        color: #fff;
+    }
+    .footer-col ul li a{
+        color: #fff;
+    }
+    .footer-contact-item{
+        color: #fff;
+    }
 }
 
 #preloader {
@@ -3623,4 +3642,89 @@ a {
     to {
         transform: rotate(360deg);
     }
+}
+
+.video-thumb {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.video-thumb img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    display: block;
+}
+
+.play-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70px;
+    height: 70px;
+    background: #ff0000;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    transition: .3s;
+}
+
+.video-thumb:hover .play-icon {
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+#carouselExampleIndicators .carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
+    /* Adjust width as needed */
+    opacity: 0.8;
+    /* Slightly transparent by default */
+    transition: opacity 0.3s ease;
+    /* Smooth fade effect */
+}
+
+/* Ensure links don't have an underline */
+#carouselExampleIndicators .carousel-control-prev:hover,
+.carousel-control-next:hover {
+    text-decoration: none;
+    opacity: 1;
+    /* Full opacity on hover */
+}
+
+/* Style for the Font Awesome icons inside the links */
+#carouselExampleIndicators .carousel-control-prev i,
+.carousel-control-next i {
+    color: #ffffff;
+    /* Icon color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Semi-transparent dark background */
+    font-size: 1.5rem;
+    /* Icon size */
+    padding: 15px;
+    /* Space around the icon */
+    border-radius: 50%;
+    /* Makes it a perfect circle */
+    display: flex;
+    /* To center the icon inside the circle */
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    /* Fixed width for circle */
+    height: 50px;
+    /* Fixed height for circle */
+    transition: background-color 0.3s ease;
+    /* Smooth background change */
+}
+
+/* Hover effect for the icon circle */
+#carouselExampleIndicators .carousel-control-prev:hover i,
+.carousel-control-next:hover i {
+    background-color: rgba(0, 0, 0, 0.8);
+    /* Darker background on hover */
 }

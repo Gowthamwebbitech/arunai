@@ -11,15 +11,15 @@
                     <i class="fa-brands fa-whatsapp"></i>
                 </a>
                 <a target="_blank" href="https://www.instagram.com/arunai_academy_botany_coaching/"
-                    class="social-btn"><i class="fa-brands fa-instagram"></i></a>
+                    aria-label="Follow Arunai Academy on Instagram" class="social-btn"><i class="fa-brands fa-instagram"></i></a>
                 <a target="_blank" href="https://youtube.com/@arunaiacademy9219?si=MOgEo22Kzj1_sR3S"
-                    class="social-btn"><i class="fa-brands fa-youtube"></i></a>
+                    aria-label="Subscribe to Arunai Academy on YouTube" class="social-btn"><i class="fa-brands fa-youtube"></i></a>
                 <a target="_blank" href="https://www.facebook.com/groups/1236018409928472/?ref=share&mibextid=NSMWBT"
-                    class="social-btn"><i class="fa-brands fa-facebook-f"></i></a>
+                    aria-label="Join Arunai Academy on Facebook Group" class="social-btn"><i class="fa-brands fa-facebook-f"></i></a>
             </div>
         </div>
         <div class="footer-col">
-            <h4>Quick Links</h4>
+            <h3>Quick Links</h3>
             <ul>
                 <li><a href="{{ route('index') }}">Home</a></li>
                 <li><a href="{{ route('about') }}">About Us</a></li>
@@ -31,7 +31,7 @@
         </div>
 
         <div class="footer-col">
-            <h4>Contact Info</h4>
+            <h3>Contact Info</h3>
             <div class="footer-contact-item">
                 <span class="icon"><i class="fa-solid fa-location-dot"></i></span>
                 <span>3/2F
@@ -52,10 +52,27 @@
         <div class="footer-col">
             <h4>Location</h4>
             <div>
-                <iframe
+                {{-- <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3078.271400817034!2d78.14214947383613!3d12.100125688140869!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bac17b3e66e1bfb%3A0x68b372133d3c6f1b!2sArunai%20Academy%20%7C%20PG%20Trb%20Botany%20%7C%20Coaching%20Center%20in%20Dharmapuri!5e1!3m2!1sen!2sin!4v1775457001473!5m2!1sen!2sin"
-                    width="100%" height="180" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    title="Arunai Academy Location Map" width="100%" height="180" style="border:0;" allowfullscreen=""
+                    loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> --}}
+                <!-- MAP CONTAINER -->
+                <div id="map-click-to-load-container"
+                    style="position: relative; width: 100%; height: 180px; cursor: pointer;">
+
+                    <!-- 1. THE PLACEHOLDER IMAGE (Loads Instantly, Zero JS) -->
+                    <img src="{{ asset('assets/images/map.webp') }}" alt="Map of Arunai Academy location in Dharmapuri"
+                        loading="lazy" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+
+                    <!-- 2. THE OVERLAY/BUTTON (Shows on hover for better UX) -->
+                    <div id="map-overlay"
+                        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); display: flex; justify-content: center; align-items: center; transition: opacity 0.3s ease; opacity: 0;">
+                        <span
+                            style="color: white; font-family: sans-serif; font-size: 16px; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; padding: 10px 20px; border: 2px solid white; border-radius: 4px;">Open Google Map</span>
+                    </div>
+
+                    <!-- 3. THE IFRAME (Will be inserted here by JavaScript) -->
+                </div>
             </div>
         </div>
     </div>
@@ -67,11 +84,48 @@
 
 <button id="back-top" aria-label="Back to top">↑</button>
 
-<script src="{{ asset('assets/js/bootstrap.bundle.min.js') }}"></script>
-<script src="{{ asset('assets/js/swiper-bundle.min.js') }}"></script>
-<script src="{{ asset('assets/js/main.js') }}"></script>
+<script defer src="{{ asset('assets/js/bootstrap.bundle.min.js') }}"></script>
+<script defer src="{{ asset('assets/js/swiper-bundle.min.js') }}"></script>
+<script defer src="{{ asset('assets/js/main.js') }}"></script>
 
+<script>
+    // JavaScript to handle the Click-to-Load functionality
+    document.getElementById('map-click-to-load-container').addEventListener('click', function () {
+        // A. Create the Iframe Element
+        var iframe = document.createElement('iframe');
 
+        // B. Copy the 'src' attribute from your original code
+        iframe.src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3078.271400817034!2d78.14214947383613!3d12.100125688140869!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bac17b3e66e1bfb%3A0x68b372133d3c6f1b!2sArunai%20Academy%20%7C%20PG%20Trb%20Botany%20%7C%20Coaching%20Center%20in%20Dharmapuri!5e1!3m2!1sen!2sin!4v1775457001473!5m2!1sen!2sin";
+
+        // C. Copy other attributes from your original code
+        iframe.title = "Arunai Academy Location Map";
+        iframe.width = "100%";
+        iframe.height = "180";
+        iframe.style.border = "0";
+        iframe.allowFullscreen = true;
+        iframe.referrerPolicy = "no-referrer-when-downgrade";
+
+        // D. Important: Add allow="lazyload" for continued performance benefits
+        iframe.setAttribute('allow', 'lazyload');
+
+        // E. Insert the iframe into the container (replaces the image and overlay)
+        this.innerHTML = ''; // Clears the placeholder image and overlay
+        this.appendChild(iframe); // Adds the functional iframe
+        this.style.cursor = 'default'; // Changes cursor back to normal
+    });
+
+    // Optional: Add hover effect to the container for better user experience
+    var container = document.getElementById('map-click-to-load-container');
+    var overlay = document.getElementById('map-overlay');
+
+    container.addEventListener('mouseover', function () {
+        overlay.style.opacity = '1';
+    });
+
+    container.addEventListener('mouseout', function () {
+        overlay.style.opacity = '0';
+    });
+</script>
 <script>
     document.addEventListener("DOMContentLoaded", function () {
         const links = document.querySelectorAll(".nav-menu a");

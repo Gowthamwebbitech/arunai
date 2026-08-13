@@ -100,4 +100,19 @@
 <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}" />
 <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.css') }}">
 <link rel="stylesheet" href="{{ asset('assets/css/swiper-bundle.min.css') }}" />
-<link rel="stylesheet" href="{{ asset('assets/css/font-awesome.css') }}"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css" integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+{{-- >>> --- START OF OPTIMIZED GTM SCRIPT --- <<< --}}
+    {{-- This script is deferred to load 2.5 seconds AFTER page load to fix Lighthouse "unused JS" warning --}}
+    <script>
+        window.addEventListener('load', function() {
+            setTimeout(function() {
+                (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+                j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+                'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+                })(window,document,'script','dataLayer','GTM-XXXXXXX'); // <--- !!! REPLACE WITH YOUR GTM ID !!!
+            }, 2500); // 2.5 second delay
+        });
+    </script>
+    <!-- End Google Tag Manager -->
+    {{-- >>> --- END OF OPTIMIZED GTM SCRIPT --- <<< --}}

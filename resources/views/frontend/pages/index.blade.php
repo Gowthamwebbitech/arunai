@@ -59,15 +59,20 @@
                 </div>
             @endforeach
         </div>
+
         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true">
-                <
-            </span>
+            <!-- Font Awesome Icon (Hidden from screen readers with aria-hidden) -->
+            <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
+            <!-- Text for screen readers only (with sr-only class) -->
+            <span class="sr-only">Previous</span>
         </a>
+
+        <!-- 3. NEXT CONTROL - ACCESSIBILITY FIX APPLIED -->
         <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true">
-                >
-            </span>
+            <!-- Font Awesome Icon (Hidden from screen readers with aria-hidden) -->
+            <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+            <!-- Text for screen readers only (with sr-only class) -->
+            <span class="sr-only">Next</span>
         </a>
     </div>
     <section>
@@ -225,7 +230,7 @@
         <div class="container" style="overflow: hidden">
             <div class="section-header">
                 <h2 class="section-title text-white">Star <span class="accent text-white">Achievers</span></h2>
-                <h5 class="text-white">PGTRB 2025 achievers</h5>
+                <h3 class="text-white">PGTRB 2025 achievers</h3>
                 <p class="section-subtitle text-white">Celebrating the brilliance of our Botany achievers who continue to
                     set benchmarks of excellence in Tamil Nadu.</p>
             </div>
@@ -354,14 +359,27 @@
             </div>
             <div class="video-grid">
                 @foreach ($videos as $video)
-                    @if($video->embed_url)
+                    @php
+                        preg_match('/(?:youtube\.com\/watch\?v=|youtu\.be\/|youtube\.com\/embed\/)([^&\?\/]+)/', $video->embed_url, $matches);
+                        $videoId = $matches[1] ?? '';
+                    @endphp
+
+                    @if($videoId)
                         <div class="video-card reveal">
-                            <div class="video-thumb">
-                                <iframe width="100%" height="280" src="{{ $video->embed_url }}" title="YouTube video player"
-                                    frameborder="0"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                            </div>
+                            <a href="https://www.youtube.com/watch?v={{ $videoId }}" target="_blank" rel="noopener noreferrer"
+                                class="video-thumb">
+
+                                <img src="https://img.youtube.com/vi/{{ $videoId }}/mqdefault.jpg" srcset="https://img.youtube.com/vi/{{ $videoId }}/mqdefault.jpg 320w,
+                                                             https://img.youtube.com/vi/{{ $videoId }}/hqdefault.jpg 480w"
+                                    sizes="(max-width: 576px) 100vw, 373px"
+                                    alt="YouTube video player: Arunai Academy student achievement" loading="lazy" width="100%"
+                                    height="280">
+
+                                <span class="play-icon">
+                                    <i class="fa-solid fa-play"></i>
+                                </span>
+
+                            </a>
                         </div>
                     @endif
                 @endforeach
@@ -473,7 +491,7 @@
                 d="M581.7 188.1C575.5 164.4 556.9 145.8 533.4 139.5C490.9 128 320.1 128 320.1 128C320.1 128 149.3 128 106.7 139.5C83.2 145.8 64.7 164.4 58.4 188.1C47 231 47 320.4 47 320.4C47 320.4 47 409.8 58.4 452.7C64.7 476.3 83.2 494.2 106.7 500.5C149.3 512 320.1 512 320.1 512C320.1 512 490.9 512 533.5 500.5C557 494.2 575.5 476.3 581.8 452.7C593.2 409.8 593.2 320.4 593.2 320.4C593.2 320.4 593.2 231 581.8 188.1zM264.2 401.6L264.2 239.2L406.9 320.4L264.2 401.6z" />
         </svg>
     </a>
- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
@@ -504,7 +522,6 @@
 
         });
     </script>
-
     <script>
         var swiper = new Swiper(".achievers-slider", {
             loop: true,
@@ -514,11 +531,34 @@
                 disableOnInteraction: false,
             },
 
+            // PAGINATION CONFIGURATION - UPDATED FOR ACCESSIBILITY
             pagination: {
                 el: ".swiper-pagination",
                 clickable: true,
                 dynamicBullets: true,
                 dynamicMainBullets: 4,
+
+                // *** START OF ACCESSIBILITY FIX ***
+                // The renderBullet function creates the HTML for each pagination bullet.
+                // We use it to inject the necessary aria-label, role, and tabindex.
+                renderBullet: function (index, className) {
+                    // 'index' is 0-based (0, 1, 2, 3...).
+                    // We create a user-friendly slide number by adding 1.
+                    var slideNumber = index + 1;
+
+                    // *** CUSTOMIZE THIS LABEL TEXT ***
+                    // You can change this string to better describe your content.
+                    // For example: "Go to slide " + slideNumber + ": Meet our Topers"
+                    var accessibleLabel = "Go to slide " + slideNumber + ": Top Achievers";
+
+                    // We return the full HTML string for the pagination bullet span.
+                    // The critical parts are role="button", tabindex="0", and aria-label.
+                    return '<span class="' + className + '" ' +
+                        'role="button" ' +
+                        'tabindex="0" ' +
+                        'aria-label="' + accessibleLabel + '"></span>';
+                },
+                // *** END OF ACCESSIBILITY FIX ***
             },
 
             navigation: {
