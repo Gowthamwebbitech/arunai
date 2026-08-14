@@ -15,7 +15,6 @@
     <meta name="googlebot" content="index, follow">
     <meta name="bingbot" content="index, follow"> 
 
-    <!-- Favicon & Canonical -->
     <link rel="icon" type="image/x-icon" href="{{ asset('assets/images/favicon.png') }}" />
     <link rel="canonical" href="{{ request()->url() }}">
 
